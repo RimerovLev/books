@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 public interface BookRepository extends JpaRepository<Book, String> {
     Stream<Book> findBooksByAuthorsName(String name);
 
-    List<Book> findByPublisherPublisherName(String publisherName);
+    //List<Book> findByPublisherPublisherName(String publisherName);
 
     void deleteByAuthorsName(String authorName);
 
